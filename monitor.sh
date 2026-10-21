@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd /home/suknain-choudry/sc2599_IT340_Lab4 || exit 1
+
+# Resolved Header
+echo "OFFICIAL SYSTEM REPORT - $(date)" >> system_log.txt
+free -h | grep Mem >> system_log.txt
+echo "--------------------------------" >> system_log.txt
